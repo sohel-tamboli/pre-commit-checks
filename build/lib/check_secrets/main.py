@@ -14,11 +14,11 @@ def print_arguments(arguments: list[str]):
 
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("filenames", nargs="*")
-    args = parser.parse_args()
+    # parser = argparse.ArgumentParser()
+    # parser.add_argument("filenames", nargs="*")
+    # args = parser.parse_args()
 
-    print_arguments(args.filenames)
+    print_arguments(["args.filenames"])
 
 
 if __name__ == "__main__":
