@@ -4,13 +4,13 @@ import os
 
 def print_arguments(arguments: list[str]):
     print(os.system("pwd"))
-    print(os.system("ls"))
+    # print(os.system("ls"))
     # os.system("brew tap trufflesecurity/trufflehog")
     # os.system("brew install trufflehog")
     
     for argument in arguments:
-        pass
-        # print(argument)
+        # pass
+        print(argument)
 
 
 def main():
