@@ -1,0 +1,5 @@
+- id: check-secrets
+  name: check-secrets
+  description: Checking any secrets present in repo or not
+  entry: check-secrets
+  language: python

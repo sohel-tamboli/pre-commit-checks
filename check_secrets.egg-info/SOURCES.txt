@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+check_secrets/__init__.py
+check_secrets/main.py
+check_secrets.egg-info/PKG-INFO
+check_secrets.egg-info/SOURCES.txt
+check_secrets.egg-info/dependency_links.txt
+check_secrets.egg-info/entry_points.txt
+check_secrets.egg-info/top_level.txt
