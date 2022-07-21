@@ -5,11 +5,11 @@ import os
 def print_arguments(arguments: list[str]):
     # print(os.system("pwd"))
     # print(os.system("ls")
-    # os.system("brew tap trufflesecurity/trufflehog")
-    # os.system("brew install trufflehog")
+    os.system("brew tap trufflesecurity/trufflehog")
+    os.system("brew install trufflehog")
     
     for argument in arguments:
-        print(argument)
+        print(os.system(f"trufflehog filesystem file:///{argument}"))
 
 
 def main():
