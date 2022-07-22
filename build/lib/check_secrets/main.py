@@ -4,12 +4,13 @@ import os
 
 def print_arguments(arguments: list[str]):
     # print(os.system("pwd"))
+    pwd = os.getcwd()
     # print(os.system("ls")
     os.system("brew tap trufflesecurity/trufflehog")
     os.system("brew install trufflehog")
     
     for argument in arguments:
-        print(os.system(f"trufflehog filesystem file:///{argument}"))
+        print(os.system(f"trufflehog filesystem file:///{pwd}/{argument}"))
 
 
 def main():
