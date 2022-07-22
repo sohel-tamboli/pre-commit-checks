@@ -9,7 +9,7 @@ def print_arguments(arguments: list[str]):
     os.system("brew tap trufflesecurity/trufflehog")
     os.system("brew install trufflehog")
     
-    print(os.system(f"trufflehog filesystem ."))
+    print(os.system(f"trufflehog filesystem --directory=."))
     # for argument in arguments:
     #     print(os.system(f"trufflehog filesystem ."))
 
