@@ -1,15 +1,16 @@
 # print_arguments/main.py
 import argparse
 import os
+import subprocess
 
 def print_arguments(arguments: list[str]):
     # print(os.system("pwd"))
     pwd = os.getcwd()
     # print(os.system("ls")
-    os.system("brew tap trufflesecurity/trufflehog")
-    os.system("brew install trufflehog")
+    subprocess.run("brew tap trufflesecurity/trufflehog", stdout= subprocess.DEVNULL)
+    subprocess.run("brew install trufflehog", stdout= subprocess.DEVNULL)
     
-    print(os.system(f"trufflehog filesystem --directory=."))
+    os.system(f"trufflehog filesystem --directory=.")
     # for argument in arguments:
     #     print(os.system(f"trufflehog filesystem ."))
 
