@@ -7,8 +7,8 @@ def print_arguments(arguments: list[str]):
     # print(os.system("pwd"))
     pwd = os.getcwd()
     # print(os.system("ls")
-    subprocess.call("brew tap trufflesecurity/trufflehog", stdout= subprocess.DEVNULL)
-    subprocess.call("brew install trufflehog", stdout= subprocess.DEVNULL)
+    subprocess.call(["brew", "tap", "trufflesecurity/trufflehog"], stdout= subprocess.DEVNULL)
+    subprocess.call(["brew", "install", "trufflehog"], stdout= subprocess.DEVNULL)
     
     os.system(f"trufflehog filesystem --directory=.")
     # for argument in arguments:
